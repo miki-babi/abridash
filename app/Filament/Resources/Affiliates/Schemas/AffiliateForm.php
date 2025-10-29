@@ -31,27 +31,27 @@ class AffiliateForm
                 TextInput::make('total_referrals')
                     ->label('Total Referrals')
                     ->numeric()
-                    ->nullable()->disabled(),
+                    ->nullable(),
                 TextInput::make('converted_referrals')
                     ->label('Converted Referrals')
                     ->numeric()
-                    ->nullable()->disabled(),
+                    ->nullable(),
                 TextInput::make('total_earnings')
                     ->label('Total Earnings')
                     ->numeric()
-                    ->nullable()->disabled(),
+                    ->nullable(),
                 TextInput::make('withdrawn_earnings')
                     ->label('Withdrawn Earnings')
                     ->numeric()
                     ->minValue(0)      // ensures value >= 0
                     ->step(1)
-                    ->nullable()->disabled(),
+                    ->nullable(),
                 TextInput::make('remaining_balance')
                     ->label('Remaining Balance')
                     ->numeric()
                     ->minValue(0)      // ensures value >= 0
                     ->step(1)
-                    ->nullable()->disabled(),
+                    ->nullable(),
                 Toggle::make('is_active')
                     ->label('Is Active')
                     ->default(false),

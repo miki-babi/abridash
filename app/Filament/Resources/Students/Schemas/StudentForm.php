@@ -25,14 +25,14 @@ class StudentForm
                     ->options(fn() => Student::pluck('name', 'id')->toArray())
                     ->searchable()
                     ->preload()
-                    ->disabled(),
+                    ,
                 Select::make('source')
                     ->label('Source')
                     ->options(fn() => Campaign::pluck('name', 'id')->toArray())
                     ->searchable()
                     ->preload()
                     ->nullable()
-                    ->disabled(),
+                    ,
                 Toggle::make('is_registered')->label('Is Registered'),
 
             ]);
